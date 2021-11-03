@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平居中 table实现 ie6+</title>
+    <style>
+        .parent{
+            height: 300px;
+            margin:20px;
+            background: lightgrey;
+        }
+        .son{
+            display: table;
+            margin: 0 auto;
+            background: lightblue;
+            height: 50px;
+        }
+        .son a,.son span{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="son">
+        <a>网址地图</a><span>|</span><a>网址地图</a><span>|</span><a>网址地图</a><span>|</span><a>网址地图</a><span>|</span>
+    </div>
+</div>
+</body>
+</html>

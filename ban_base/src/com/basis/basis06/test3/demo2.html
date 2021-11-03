@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a伪类应用</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .tab {
+            width: 301px;
+            margin: 20px auto;
+        }
+
+        .header {
+            border-left: 1px solid #000000;
+            overflow: hidden;
+        }
+
+        .header h3 {
+            float: left;
+            width: 99px;
+            height: 36px;
+            line-height: 36px;
+            border-right: 1px solid #000000;
+            text-align: center;
+            border-bottom: 1px solid #000000;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .header h3.on {
+            border-bottom: none;
+            background: none;
+        }
+
+        .con_ul {
+
+        }
+
+        h1{
+            width: 96px;
+            overflow: hidden;
+        }
+        .aa{
+            display: block;
+            background: teal;
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <div class="header">
+        <h3 class="on">1</h3>
+        <h3>2</h3>
+        <h3>3</h3>
+    </div>
+    <div class="content">
+        <ul class="con_ul">
+            <li><a href="#">item1</a></li>
+            <li><a href="#">item2</a></li>
+            <li><a href="#">item3</a></li>
+            <li><a href="#">item4</a></li>
+            <li><a href="#">item5</a></li>
+            <li><a href="#">item6</a></li>
+            <li><a href="#">item7</a></li>
+        </ul>
+    </div>
+</div>
+
+<h1><a class="aa" href="#">title</a></h1>
+<div>test...</div>
+</body>
+</html>

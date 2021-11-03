@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>居中研究 margin 塌陷解决方案 加父盒子触发bfc inline-block overflow 子级float影响</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .ofh {
+            overflow: hidden;
+        }
+
+        .box {
+            background: lightgrey;
+            margin: 20px;
+            border: solid 1px red;
+        }
+
+        .pa1 {
+            text-align: center;
+        }
+
+        p {
+            display: inline-block;
+            background: lightblue;
+        }
+
+        .bot {
+            text-align: center;
+        }
+
+        .ct {
+            display: inline-block;
+            padding-left: 4px;
+            overflow: hidden;
+            background: teal;
+        }
+
+        .ct a, .ct span {
+            float: left;
+            margin-right: 4px;
+        }
+        .box1{
+            background: lightgrey;
+            margin: 20px;
+            border: solid 1px red;
+            text-align: center;
+        }
+        .box1 .inner{
+            display: inline-block;
+            background: teal;
+            /*overflow: hidden;*/
+        }
+        .box1 .inner a, .box1 .inner span{
+            /*float: left;*/
+        }
+
+        .box2{
+            background: lightgrey;
+            margin: 20px;
+            border: solid 1px red;
+            text-align: center;
+        }
+        .box2 .inner{
+            display: inline-block;
+            background: teal;
+            overflow: hidden;
+        }
+        .box2 .inner a, .box2 .inner span{
+            float: left;
+        }
+
+        .box6{
+            width: 500px;
+            height: 200px;
+            background: #dddddd;
+            border: 1px solid red;
+        }
+        .box6 .son1{
+            width: 50px;
+            height: 50px;
+            background: darksalmon;
+            margin:10px;
+            border: 1px solid red;
+
+        }
+        .box6 .son2{
+            width: 50px;
+            height: 50px;
+            background: teal;
+            margin:10px;
+            border: 1px solid red;
+
+        }
+    </style>
+</head>
+<body>
+<div class="ofh">
+    <div class="box pa1">
+        <p>123</p>
+    </div>
+</div>
+
+<div class="ofh">
+    <div class="box pa1">
+        <p>456</p>
+    </div>
+</div>
+
+<div class="box bot">
+    <div class="ct">
+        <span><a href="http://www.alibaba.com/">阿里巴巴国际交易市场</a></span>
+        <a>网址地图</a><span>|</span>
+        <a>网址地图</a><span>|</span>
+        <a>网址地图</a><span>|</span>
+        <a>网址地图</a><span>|</span>
+    </div>
+</div>
+
+<div class="box1">
+    <div class="inner">
+        <a>网址地图</a><span>|</span>
+        <a>网址地图</a><span>|</span>
+        <a>网址地图</a><span>|</span>
+    </div>
+</div>
+
+<div class="box2">
+    <div class="inner">
+        <a>网址地图</a><span>|</span>
+        <a>网址地图</a><span>|</span>
+        <a>网址地图</a><span>|</span>
+    </div>
+</div>
+
+
+<div class="box6">
+    <div class="son1"></div>
+    <div class="son2"></div>
+</div>
+</body>
+</html>

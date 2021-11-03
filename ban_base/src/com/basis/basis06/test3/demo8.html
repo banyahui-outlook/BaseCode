@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直居中 table-cell parent设置table cell 不能用百分比</title>
+    <style type="text/css">
+        .parent{
+            height: 200px;
+            margin: 20px;
+            background: lightgrey;
+        }
+        .son_inner{
+            height: 150px;
+            display: table-cell;
+            vertical-align: middle;
+            background: beige;
+        }
+        .son{
+            background: lightblue;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="son_inner">
+            <div class="son"></div>
+        </div>
+    </div>
+</body>
+</html>

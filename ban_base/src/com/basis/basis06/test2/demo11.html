@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float不会塌陷</title>
+    <style type="text/css">
+        .box {
+            width: 300px;
+            height: 250px;
+            background: azure;
+            margin-bottom: 10px;
+        }
+
+        .box1, .box2 {
+            width: 250px;
+            height: 50px;
+            margin: 20px;
+            background: darksalmon;
+        }
+        .box3, .box4 {
+            float: left;
+            width: 250px;
+            height: 50px;
+            margin: 20px;
+            background: darksalmon;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+<div class="box">
+    <div class="box3"></div>
+    <div class="box4"></div>
+</div>
+</body>
+</html>

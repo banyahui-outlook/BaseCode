@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inline-block test</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 200px;
+            margin: 10px auto;
+            background: lightgrey;
+            text-align: center;
+            position: relative;
+        }
+        .pos{
+            position: absolute;
+            left: 0;
+            top:0;
+            height: 100px;
+            width: 100px;
+            background: teal;
+        }
+        .son{
+            display: inline-block;
+            background: lightblue;
+        }
+        .content{
+            height: 100px;
+            width: 100px;
+            background: skyblue;
+        }
+
+        .center_inner{
+            text-align: center;
+            background: beige;
+        }
+        .center{
+            display: inline-block;
+            background: skyblue;
+        }
+        .center_flo{
+            display: block;
+            background: darksalmon;
+        }
+        .center_flo a,.center_flo span{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pos"></div>
+        <div class="son">
+            <div class="content"></div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="center_inner">
+            <div class="center">
+                <div class="center_flo">
+                    <a>网址地图</a><span>|</span>
+                    <a>网址地图</a><span>|</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

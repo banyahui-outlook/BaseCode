@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模仿京东</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+        .banner_top .banner_top_link{
+            background-color: rgb(225, 69, 18);
+        }
+        .banner_top .banner_top_container{
+            width: 990px;
+            background: url("https://img12.360buyimg.com/babel/jfs/t1/92035/39/7977/30995/5e00f6feE0abaa7c9/426e27db2987f286.jpg!cc_990x80!q70.jpg.webp") no-repeat center center;
+        }
+        .banner_top .banner_top_container i{
+            right: 0;
+            top: 0;
+            height: 16px;
+            width: 16px;
+            background: lightgrey;
+        }
+        .nav_top{
+            border-bottom: 1px solid #ddd;
+            background: #e3e4e5;
+        }
+        .nav_top .nav_top_container{
+            color: #999;
+            width: 990px;
+            line-height: 30px;
+            font-size: 12px;
+        }
+        .nav_top .nav_top_container .nav_top_left{
+
+        }
+        .nav_top .nav_top_container .nav_top_left li{
+            float: left;
+        }
+        .nav_top .nav_top_container .nav_top_left li a{
+            cursor: pointer;
+        }
+        .nav_top .nav_top_container .nav_top_left li a span {
+            padding-left: 16px;
+            background: url("1.png") no-repeat left top -86px;
+        }
+        .nav_top .nav_top_container .nav_top_left li .nav_top_left_position_content{
+            position: absolute;
+            z-index: 33;
+            width: 100px;
+            height: 100px;
+            background: #dddddd;
+            display: none;
+        }
+        .nav_top .nav_top_container .nav_top_right{
+            float: right;
+            line-height: 30px;
+        }
+        .nav_top .nav_top_container .nav_top_right li{
+            float: left;
+        }
+        .nav_top .nav_top_container .nav_top_right li div{
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        .nav_top .nav_top_container .nav_top_right li.spacer{
+            width: 1px;
+            height: 10px;
+            margin: 11px 5px 0px;
+            background: #cccccc;
+        }
+    </style>
+</head>
+<body>
+<div class="banner_top of h80">
+    <a class="banner_top_link block h" href="http://www.baidu.com" target="_blank">
+        <div class="banner_top_container h bc pr" alt="连接">
+            <i class="pa dib tc vm">x</i>
+        </div>
+    </a>
+</div>
+<div class="nav_top h30">
+    <div class="nav_top_container h bc">
+        <ul class="nav_top_left">
+            <li class="nav_top_left_position pr">
+                <a href="#">
+                    <span>北京</span>
+                </a>
+                <div class="nav_top_left_position_content">
+                    xxxxx
+                </div>
+            </li>
+        </ul>
+        <ul class="nav_top_right">
+            <li><div><a>你好,请登录</a></div></li><li class="spacer"></li>
+            <li><div><a>我的订单</a></div></li><li class="spacer"></li>
+            <li><div><a>我的京东<i>y</i></a></div></li><li class="spacer"></li>
+            <li><div><a>京东会员</a></div></li><li class="spacer"></li>
+            <li><div><a>企业采购</a></div></li><li class="spacer"></li>
+            <li><div><a>客户服务</a></div></li><li class="spacer"></li>
+            <li><div><a>网站导航</a></div></li><li class="spacer"></li>
+            <li><div><a>手机京东</a></div></li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+
+</div>
+<div class="container"></div>
+<div class="footer"></div>
+</body>
+</html>

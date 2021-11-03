@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父级触发bfd 清除margin塌陷</title>
+    <STYLE>
+        .son1{
+            width: 50px;
+            height: 50px;
+            background: darksalmon;
+            margin:50px;
+            border: 1px solid red;
+        }
+        .con{
+            overflow: hidden;
+        }
+        .son2{
+            width: 50px;
+            height: 50px;
+            background: teal;
+            margin:50px;
+            border: 1px solid red;
+        }
+    </STYLE>
+</head>
+<body>
+
+    <div class="son1"></div>
+    <div class="con">
+        <div class="son2"></div>
+    </div>
+</body>
+</html>

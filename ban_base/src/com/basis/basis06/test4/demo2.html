@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table-cell水平垂直居中</title>
+    <style>
+        .parent{
+            width: 500px;
+            height: 200px;
+            background: lightgrey;
+            display: table;
+        }
+        .parent .son{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .parent .content{
+            display: inline-block;
+            background: teal;
+        }
+        .parent .content ul{
+            background: darksalmon;
+            margin: 0px;
+        }
+        .parent .content ul li{
+            float: left;
+        }
+
+        .parent2{
+            width: 500px;
+            height: 200px;
+            background: lightgrey;
+            display: table;
+            margin-top: 20px;
+        }
+        .parent2 .son{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .parent2 .son ul{
+            display: inline-block;
+            background: darksalmon;
+            margin: 0px;
+        }
+        .parent2 .son ul li{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="son">
+            <div class="content">
+                <ul>
+                    <li>q2q13123</li>
+                    <li>q2q13123</li>
+                    <li>q2q13123</li>
+                    <li>q2q13123</li>
+                    <li>q2q13123</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="parent2">
+        <div class="son">
+             <ul>
+                 <li>q2q13123</li>
+                 <li>q2q13123</li>
+                 <li>q2q13123</li>
+                 <li>q2q13123</li>
+                 <li>q2q13123</li>
+             </ul>
+        </div>
+    </div>
+</body>
+</html>

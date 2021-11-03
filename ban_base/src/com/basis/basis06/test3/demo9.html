@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精灵图 local 滚动 ie8 scroll</title>
+    <style type="text/css">
+        body{
+            background: lightgrey;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background: lightblue;
+            background: url("back.jpg") no-repeat left top;
+            overflow: scroll;
+            background-attachment:local;
+        }
+        .icon{
+            width: 120px;
+            height: 120px;
+            background: url("1.png") no-repeat left top;
+        }
+        .icon2{
+            margin-top: 10px;
+            width: 120px;
+            height: 120px;
+            background: url("1.png") no-repeat -120px -120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="icon"></div>
+        <div class="icon2"></div>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+    </div>
+</body>
+</html>
